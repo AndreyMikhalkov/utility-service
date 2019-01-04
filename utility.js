@@ -57,6 +57,6 @@ var listener = app.listen(8089, function(){
     var port = listener.address().port;
 
     console.log('App started at %s', dateTimeHelper.currentDateTime());
-    console.log('App started at %sth day', dateTimeHelper.getCurrentWeekday());
+    console.log('App started at %sth day UTC', dateTimeHelper.getCurrentWeekday(0));
     console.log('App listening at http://%s:%s', host, port);
 });
