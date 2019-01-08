@@ -5,8 +5,8 @@
 ;
 [subrepo]
 	remote = git@github.com:AndreyMikhalkov/lib.git
-	branch = develop
-	commit = 2da89b07dd5d3cc12bab16432d223a28c7045a58
-	parent = 0c67a0325f577f73a41f75c70c6748f7135d334b
+	branch = branch
+	commit = 647842a620c94b21a6901531667025d025963f4a
+	parent = c18340073ca95e7ee6272bf82b958ddee928bd7f
 	method = merge
 	cmdver = 0.4.0
