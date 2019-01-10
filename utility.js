@@ -52,11 +52,13 @@ app.get('/allNotes', function(request,response){
     })
 });
 
-var listener = app.listen(8089, function(){
+var listener = app.listen(8090, function(){
     var host = listener.address().address;
     var port = listener.address().port;
 
-    console.log('App started at %s', dateTimeHelper.currentDateTime());
+    const currentDateTime = dateTimeHelper.currentDateTime();
+
+    console.log('App started at %s weekday %s', currentDateTime, dateTimeHelper.getWeekdayForDate(currentDateTime));
     console.log('App started at %sth day UTC', dateTimeHelper.getCurrentWeekday(0));
     console.log('App listening at http://%s:%s', host, port);
 });
