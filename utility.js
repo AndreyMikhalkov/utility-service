@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 
 const dateTimeHelper = require('lib/helpers/dateTimeHelper');
+const currencyHelper = require('lib/helpers/currencyHelper');
 
 var app = express();
 app.use(bodyParser.urlencoded({extended: false}));
@@ -61,4 +62,5 @@ var listener = app.listen(8090, function(){
     console.log('App started at %s weekday %s', currentDateTime, dateTimeHelper.getWeekdayForDate(currentDateTime));
     console.log('App started at %sth day UTC', dateTimeHelper.getCurrentWeekday(0));
     console.log('App listening at http://%s:%s', host, port);
+    console.log('Testing currencyHelper %s', currencyHelper.round(5.5, 0));
 });
