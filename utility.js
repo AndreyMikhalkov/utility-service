@@ -62,5 +62,5 @@ var listener = app.listen(8090, function(){
     console.log('App started at %s weekday %s', currentDateTime, dateTimeHelper.getWeekdayForDate(currentDateTime));
     console.log('App started at %sth day UTC', dateTimeHelper.getCurrentWeekday(0));
     console.log('App listening at http://%s:%s', host, port);
-    console.log('Testing currencyHelper %s %s', currencyHelper.round(5.5, 0), currencyHelper.convertFromDollarsToCents('123'));
+    console.log('Testing currencyHelper %s %s %s', currencyHelper.round(5.5, 0), currencyHelper.convertFromDollarsToCents('123'), currencyHelper.convertFromCentsToDollars('12300'));
 });
