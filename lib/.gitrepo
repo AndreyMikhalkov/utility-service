@@ -5,8 +5,8 @@
 ;
 [subrepo]
 	remote = git@github.com:AndreyMikhalkov/lib.git
-	branch = feature/add-currency-helper
-	commit = 3e73441b5764b4f1f49401c651b54e13903e58e7
-	parent = a82459c31dfa552507f3b7fba42f52963a97fb6c
+	branch = develop
+	commit = d4371ed066724120d2954bcd9f1b7d447876783d
+	parent = 55903cb4618902329598d510cfa5899a602230cf
 	method = merge
 	cmdver = 0.4.0
